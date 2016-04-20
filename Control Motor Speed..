@@ -1,0 +1,19 @@
+# include <stdio.h>
+#include <time.h>
+
+extern “C” int InitHardware ();
+extern “C” int Read Analog(int ch_adc);
+extern”C” int Sleep (int sec, int usec);
+extern”C” int Motor ( int motor, int dir, int speed);
+Speed = Read Analog();
+int main (){
+InitHardware ();
+Set Motor (1,1,speed);
+Sleep(1,0);
+Set Motor(2,1,speed);
+Sleep(1,0);
+}
+
+
+
+
